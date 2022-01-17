@@ -26,9 +26,9 @@ public class Employee implements Comparable<Employee> {
         // return 0;
 
         // 升序
-        // return this.age - o.age;
+        return this.age - o.age;
         // 降序
-        return o.age - this.age;
+        // return o.age - this.age;
     }
 
     public Employee() {
