@@ -2,6 +2,7 @@ package com.liuxiaocs._22递归实现文件搜索;
 
 
 import java.io.File;
+import java.io.IOException;
 
 /**
     目标：递归实现文件搜索(非规律递归)
@@ -39,6 +40,13 @@ public class FileSearchDemo {
                         // 6.判断该文件是否为我要找的文件对象
                         if(file.getName().equals(fileName)) {
                             System.out.println(file.getAbsoluteFile());
+                            // try {
+                            //     // 启动它
+                            //     Runtime r = Runtime.getRuntime();
+                            //     r.exec(file.getAbsolutePath());
+                            // } catch (IOException e) {
+                            //     e.printStackTrace();
+                            // }
                         }
                     } else {
                         // 7.该文件是文件夹，文件夹要递归进入继续寻找
